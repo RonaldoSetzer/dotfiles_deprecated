@@ -3,6 +3,8 @@ call plug#begin()
   Plug 'drewtempelmeyer/palenight.vim'
 
   " IDE =============================================
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
   Plug 'Raimondi/delimitMate'
