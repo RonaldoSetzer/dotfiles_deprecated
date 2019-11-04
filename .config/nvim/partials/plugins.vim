@@ -5,6 +5,7 @@ call plug#begin()
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
   Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-repeat'
 
   " GIT ================================================
   " ======================================================
