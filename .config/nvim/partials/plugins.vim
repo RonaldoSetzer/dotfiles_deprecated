@@ -1,6 +1,7 @@
 call plug#begin()
   " APPARENCE =======================================
   Plug 'drewtempelmeyer/palenight.vim'
+  Plug 'ryanoasis/vim-devicons'
 
   " IDE =============================================
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
