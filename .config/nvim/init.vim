@@ -1,0 +1,1 @@
+runtime! partials/settings.vim
