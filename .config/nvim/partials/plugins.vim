@@ -6,6 +6,7 @@ call plug#begin()
   " IDE =============================================
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() } }
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
   Plug 'Raimondi/delimitMate'
