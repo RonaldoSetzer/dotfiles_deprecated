@@ -6,6 +6,7 @@ call plug#begin()
   Plug 'sheerun/vim-polyglot'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
+  Plug 'Raimondi/delimitMate'
 
   " GIT ================================================
   " ======================================================
