@@ -1,4 +1,5 @@
 set termguicolors
+set background=dark
 set encoding=UTF-8
 set hidden                                                                      "Allow to switch between buffers without saving
 
@@ -34,3 +35,6 @@ set colorcolumn=100                                                             
 set foldmethod=syntax                                                           "When folding enabled, use syntax method
 set diffopt+=vertical       
  
+syntax on
+colorscheme palenight
+
