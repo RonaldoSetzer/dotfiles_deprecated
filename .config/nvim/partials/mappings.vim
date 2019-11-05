@@ -1,5 +1,6 @@
 " Map for LeaderKey key
 let mapleader = ','
+nnoremap <Leader>v <C-w>v
 
 " Handle ale error window
 nnoremap <Leader>e :lopen<CR>
