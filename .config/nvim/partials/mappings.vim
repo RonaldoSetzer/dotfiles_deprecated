@@ -9,7 +9,10 @@ nnoremap <Leader>v <C-w>v
 " Map save to Ctrl + S
 map <c-s> :w<CR>
 imap <c-s> <C-o>:w<CR>
-nnoremap <Leader>s :w<CR
+nnoremap <Leader>s :w<CR>
+
+" Map close buffer
+nnoremap <Leader>w :bd<CR>
 
 " Clear highlight on pressing ESC
 nnoremap <esc> :noh<return><esc>
