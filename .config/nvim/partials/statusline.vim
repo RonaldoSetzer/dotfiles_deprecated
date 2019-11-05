@@ -17,11 +17,12 @@ let g:lightline.active = {
 \ 'left': [[ 'mode', 'paste'], [ 'readonly', 'relativepath', 'custom_modified' ]],
 \ 'right': [['linter_errors', 'linter_warnings'], ['indent', 'percent', 'lineinfo'], ['filetype']],
 \ }
-let g:lightline.mode_map = {
-\   'n': '?',  'i': '?',       'R': '?',     'v': '?',
-\   'V': '?',   "\<C-v>": '?',   'c': '?',     's': 'S',
-\   'S': 'S',    "\<C-s>": 'S',    't': 'T',
-\ }
+  let g:lightline.mode_map = {
+  \ 'n': '★',  'i': '✎',       'R': '✎',     'v': '☆',
+  \ 'V': '☆',  "\<C-v>": '☆',  'c': '☆',     's': 'S',
+  \ 'S': 'S',  "\<C-s>": 'S',  't': 'T',
+  \}
+
 
 let g:lightline.component_expand = {
 \ 'buffers': 'lightline#bufferline#buffers',
