@@ -3,6 +3,7 @@ call plug#begin()
   Plug 'drewtempelmeyer/palenight.vim'
   Plug 'ryanoasis/vim-devicons'
   Plug 'itchyny/lightline.vim'
+  Plug 'Yggdroot/indentLine'
 
   " IDE =============================================
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -18,4 +19,10 @@ call plug#begin()
   " GIT =============================================
   " =================================================
 call plug#end()
+
+" ===================================================
+"  PLUGINS SETTINGS =================================
+" ===================================================
+
+let g:indentLine_char = '⎸'
 
