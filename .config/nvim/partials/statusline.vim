@@ -5,6 +5,10 @@ let g:lightline.colorscheme = get(g:, 'colors_name', 'default')
 let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" }
 let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" }
 let g:lightline.tabline = {'left': [['buffers']]}
+let g:lightline.active = {
+  \ 'left': [[ 'mode', 'paste'], [ 'readonly', 'relativepath' ]],
+  \ 'right': [['indent', 'percent', 'lineinfo'], ['filetype']],
+\ }
 let g:lightline.mode_map = {
 \   'n': '?',  'i': '?',       'R': '?',     'v': '?',
 \   'V': '?',   "\<C-v>": '?',   'c': '?',     's': 'S',
@@ -12,7 +16,8 @@ let g:lightline.mode_map = {
 \ }
 
 let g:lightline.component_expand = {
-\ 'buffers': 'lightline#bufferline#buffers'
+\ 'buffers': 'lightline#bufferline#buffers',
+\ 'indent': 'IndentInfo',
 \}
 
 let g:lightline.component_type   = {
@@ -35,3 +40,7 @@ nmap <Leader>8 <Plug>lightline#bufferline#go(8)
 nmap <Leader>9 <Plug>lightline#bufferline#go(9)
 nmap <Leader>0 <Plug>lightline#bufferline#go(10)
 
+function! IndentInfo() abort
+  let l:indent_type = &expandtab ? 'spaces' : 'tabs'
+  return l:indent_type.': '.&shiftwidth
+endfunction
