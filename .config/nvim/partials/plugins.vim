@@ -18,6 +18,9 @@ call plug#begin()
   Plug 'w0rp/ale'
 
   " GIT =============================================
+  Plug 'airblade/vim-gitgutter'
+  Plug 'tpope/vim-fugitive'
+
   " =================================================
 call plug#end()
 
@@ -38,4 +41,12 @@ let g:ale_javascript_prettier_options = '--print-width 100 --single-quote --trai
 let g:ale_lint_delay = 400                                                      "Increase linting delay
 let g:ale_sign_error = '✖'                                                      "Lint error sign
 let g:ale_sign_warning = '⚠'
+
+ " GIT
+
+let g:gitgutter_sign_added = '▌'
+let g:gitgutter_sign_modified = '▌'
+let g:gitgutter_sign_removed = '▌'
+let g:gitgutter_sign_removed_first_line = '▌'
+let g:gitgutter_sign_modified_removed = '▌'
 
