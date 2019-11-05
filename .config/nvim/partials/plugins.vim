@@ -13,6 +13,7 @@ call plug#begin()
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
   Plug 'Raimondi/delimitMate'
+  Plug 'dyng/ctrlsf.vim'
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
@@ -50,4 +51,9 @@ let g:gitgutter_sign_modified = '▌'
 let g:gitgutter_sign_removed = '▌'
 let g:gitgutter_sign_removed_first_line = '▌'
 let g:gitgutter_sign_modified_removed = '▌'
+
+let g:ctrlsf_position = 'bottom'
+let g:ctrlsf_default_view_mode = 'compact'
+let g:ctrlsf_auto_focus = {"at": "start" }
+let g:ctrlsf_auto_close = { "compact": 1 }
 
