@@ -29,3 +29,9 @@ nmap <Leader>F <Plug>CtrlSFCwordPath
 " comment command
 nmap <Leader>c gcc
 
+" Open horizontal split
+nnoremap <Leader>h <C-w>s
+
+" Open vertical split
+nnoremap <Leader>v <C-w>v
+
