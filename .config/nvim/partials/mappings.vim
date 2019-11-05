@@ -18,3 +18,8 @@ nnoremap <esc> :noh<return><esc>
 nnoremap <Leader>e :lopen<CR>
 nnoremap <Leader>E :lclose<CR>
 
+" Search mappings
+nmap <Leader>f <Plug>CtrlSFPrompt
+vmap <Leader>F <Plug>CtrlSFVwordPath
+nmap <Leader>F <Plug>CtrlSFCwordPath
+
