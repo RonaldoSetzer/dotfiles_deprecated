@@ -14,6 +14,7 @@ call plug#begin()
   Plug 'tpope/vim-repeat'
   Plug 'Raimondi/delimitMate'
   Plug 'dyng/ctrlsf.vim'
+  Plug 'tomtom/tcomment_vim'
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
