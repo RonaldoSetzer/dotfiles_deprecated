@@ -23,3 +23,6 @@ nmap <Leader>f <Plug>CtrlSFPrompt
 vmap <Leader>F <Plug>CtrlSFVwordPath
 nmap <Leader>F <Plug>CtrlSFCwordPath
 
+" comment command
+nmap <Leader>c gcc
+
