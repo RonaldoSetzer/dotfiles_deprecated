@@ -1,13 +1,21 @@
 set showtabline=2
 
+augroup VimrcLightline
+  autocmd!
+  autocmd User ALEFixPre   call lightline#update()
+  autocmd User ALEFixPost  call lightline#update()
+  autocmd User ALELintPre  call lightline#update()
+  autocmd User ALELintPost call lightline#update()
+augroup end
+
 let g:lightline = {}
 let g:lightline.colorscheme = get(g:, 'colors_name', 'default')
 let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" }
 let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" }
 let g:lightline.tabline = {'left': [['buffers']]}
 let g:lightline.active = {
-  \ 'left': [[ 'mode', 'paste'], [ 'readonly', 'relativepath' ]],
-  \ 'right': [['indent', 'percent', 'lineinfo'], ['filetype']],
+\ 'left': [[ 'mode', 'paste'], [ 'readonly', 'relativepath', 'custom_modified' ]],
+\ 'right': [['linter_errors', 'linter_warnings'], ['indent', 'percent', 'lineinfo'], ['filetype']],
 \ }
 let g:lightline.mode_map = {
 \   'n': '?',  'i': '?',       'R': '?',     'v': '?',
@@ -18,10 +26,16 @@ let g:lightline.mode_map = {
 let g:lightline.component_expand = {
 \ 'buffers': 'lightline#bufferline#buffers',
 \ 'indent': 'IndentInfo',
+\ 'custom_modified': 'StatuslineModified',
+\ 'linter_warnings': 'LightlineLinterWarnings',
+\ 'linter_errors': 'LightlineLinterErrors'
 \}
 
 let g:lightline.component_type   = {
-\ 'buffers': 'tabsel'
+\ 'buffers': 'tabsel',
+\ 'custom_modified': 'error',
+\ 'linter_errors': 'error',
+\ 'linter_warnings': 'warning'
 \}
 
 let g:lightline#bufferline#show_number  = 0
@@ -44,3 +58,26 @@ function! IndentInfo() abort
   let l:indent_type = &expandtab ? 'spaces' : 'tabs'
   return l:indent_type.': '.&shiftwidth
 endfunction
+
+function! StatuslineModified() abort
+  return &modified ? '+' : &modifiable ? '' : '-'
+endfunction
+
+function! LightlineLinterWarnings() abort
+  return AleStatus('warning')
+endfunction
+
+function! LightlineLinterErrors() abort
+  return AleStatus('error')
+endfunction
+
+function AleStatus(type) abort
+  let l:count = ale#statusline#Count(bufnr(''))
+  let l:items = l:count[a:type] + l:count['style_'.a:type]
+
+  if l:items
+    return printf('%d %s', l:items, toupper(strpart(a:type, 0, 1)))
+  endif
+  return ''
+endfunction
+
