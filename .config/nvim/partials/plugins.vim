@@ -3,6 +3,7 @@ call plug#begin()
   Plug 'drewtempelmeyer/palenight.vim'
   Plug 'ryanoasis/vim-devicons'
   Plug 'itchyny/lightline.vim'
+  Plug 'mengelbrecht/lightline-bufferline'
   Plug 'Yggdroot/indentLine'
 
   " IDE =============================================
