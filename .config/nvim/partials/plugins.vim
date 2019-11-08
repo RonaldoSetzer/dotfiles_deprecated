@@ -21,6 +21,7 @@ call plug#begin()
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
   Plug 'w0rp/ale'
+  Plug 'mattn/emmet-vim'
 
   " GIT =============================================
   Plug 'airblade/vim-gitgutter'
@@ -60,3 +61,7 @@ let g:ctrlsf_default_view_mode = 'compact'
 let g:ctrlsf_auto_focus = {"at": "start" }
 let g:ctrlsf_auto_close = { "compact": 1 }
 
+" Emmet config
+let g:user_emmet_settings = {
+\ 'javascript.jsx': { 'extends': 'jsx' }
+\ }
