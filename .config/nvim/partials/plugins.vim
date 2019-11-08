@@ -15,6 +15,7 @@ call plug#begin()
   Plug 'Raimondi/delimitMate'
   Plug 'dyng/ctrlsf.vim'
   Plug 'tomtom/tcomment_vim'
+  Plug 'jingmiao/auto-pairs'
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
