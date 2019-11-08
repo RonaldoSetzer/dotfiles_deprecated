@@ -16,7 +16,8 @@ call plug#begin()
   Plug 'dyng/ctrlsf.vim'
   Plug 'tomtom/tcomment_vim'
   Plug 'prettier/vim-prettier'
-  Plug 'jingmiao/auto-pairs'
+  Plug 'jingmiao/auto-pairs' 
+  Plug 'matze/vim-move'
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
@@ -65,3 +66,6 @@ let g:ctrlsf_auto_close = { "compact": 1 }
 let g:user_emmet_settings = {
 \ 'javascript.jsx': { 'extends': 'jsx' }
 \ }
+
+" Vim-move
+let g:move_key_modifier = 'C'
