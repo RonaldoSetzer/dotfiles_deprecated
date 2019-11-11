@@ -1,5 +1,7 @@
 # NVIM
 
+![home](screenshots/home.png)
+
 ## Dependencies
 
 - ack: 
@@ -70,4 +72,9 @@
 | \<Leader>E    | :lopen        | Close ALE error list          |
 | \<Leader>f    | CtrlSFPrompt  | Search a word among files     |
 
+## Screenshots
+
+![autocomplet](screenshots/autocomplete.png)
+
+![buffers](screenshots/buffers.png)
 
