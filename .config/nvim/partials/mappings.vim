@@ -39,3 +39,5 @@ nnoremap <Leader>v <C-w>v
 nnoremap _ <c-w>5<
 nnoremap + <c-w>5>
 
+" Toggle NerdTree
+map <C-n> :NERDTreeToggle<CR>

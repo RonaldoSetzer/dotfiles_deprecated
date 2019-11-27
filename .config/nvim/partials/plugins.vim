@@ -18,6 +18,7 @@ call plug#begin()
   Plug 'prettier/vim-prettier'
   Plug 'jingmiao/auto-pairs' 
   Plug 'matze/vim-move'
+  Plug 'scrooloose/nerdtree'
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
