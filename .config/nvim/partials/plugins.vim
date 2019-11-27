@@ -6,6 +6,7 @@ call plug#begin()
   Plug 'mengelbrecht/lightline-bufferline'
   Plug 'Yggdroot/indentLine'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " IDE =============================================
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -43,7 +44,10 @@ let g:indentLine_char = '⎸'
 
 let g:ale_virtualtext_cursor = 1                                                "Enable neovim's virtualtext support
 let g:ale_virtualtext_prefix = '        ⁉: '                                    "Move virtual text a bit more right
-let g:ale_linters = {'javascript': ['eslint']}                                  "Lint js with eslint
+let g:ale_linters = {
+\ 'javascript': ['eslint'],
+\ 'typescript': ['tslint', 'tsserver'],
+\ }
 let g:ale_fixers = {'javascript': ['prettier', 'eslint']}                       "Fix eslint errors
 let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_options = '--print-width 100 --single-quote --trailing-comma'                    "Set max width to 100 chars for prettier
