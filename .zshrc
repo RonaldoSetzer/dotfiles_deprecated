@@ -17,7 +17,7 @@ alias zs="source ~/.zshrc"
 alias config="/usr/bin/git --git-dir=$HOME/.files/ --work-tree=$HOME"
 
 # SCHEME
-TERM=xterm-256color
+TERM=xterm-256color-italic
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

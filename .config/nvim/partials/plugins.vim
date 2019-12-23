@@ -82,3 +82,9 @@ let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 
 let g:NERDTreeDirArrowExpandable = '❯'
 let g:NERDTreeDirArrowCollapsible = '▾'
+
+" Palenight
+let g:palenight_terminal_italics=1
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+
