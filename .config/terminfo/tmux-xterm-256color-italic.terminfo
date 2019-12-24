@@ -1,0 +1,5 @@
+tmux-256color|tmux-xterm with 256 colors and italics,
+    use=xterm-256color,
+    sitm=\E[3m,
+    ritm=\E[23m,
+    Smulx=\E[4:%p1%dm,
