@@ -18,7 +18,6 @@ call plug#begin()
   Plug 'dyng/ctrlsf.vim'
   Plug 'tomtom/tcomment_vim'
   Plug 'prettier/vim-prettier'
-  Plug 'jingmiao/auto-pairs' 
   Plug 'matze/vim-move'
   Plug 'scrooloose/nerdtree'
 
