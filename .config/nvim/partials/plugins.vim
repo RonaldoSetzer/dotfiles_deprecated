@@ -1,7 +1,7 @@
 call plug#begin()
   " APPARENCE =======================================
   Plug 'drewtempelmeyer/palenight.vim'
-  Plug 'ryanoasis/vim-devicons'
+  Plug 'ryanoasis/vim-devicons', {'commit': '58e57b6'}
   Plug 'itchyny/lightline.vim'
   Plug 'mengelbrecht/lightline-bufferline'
   Plug 'Yggdroot/indentLine'
