@@ -1,9 +1,3 @@
-nnoremap <silent><C-p> :call FZF_dev()<CR>
-nnoremap <silent><C-b> :Buffers<CR>
-nnoremap <silent><Leader>t :BTags<CR>
-nnoremap <silent><Leader>m :History<CR>
-nnoremap <silent><Leader>g :GFiles?<CR>
-
 function! FZF_dev()
   let l:fzf_files_options = ' -m --bind ctrl-d:preview-page-down,ctrl-u:preview-page-up --preview "bat --color always --style numbers {2..}"'
 

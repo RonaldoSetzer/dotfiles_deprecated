@@ -40,3 +40,11 @@ nnoremap + <c-w>5>
 
 " Toggle NerdTree
 map <C-n> :NERDTreeToggle<CR>
+
+" FZF 
+nnoremap <silent><C-p> :call FZF_dev()<CR>
+nnoremap <silent><C-b> :Buffers<CR>
+nnoremap <silent><Leader>t :BTags<CR>
+nnoremap <silent><Leader>m :History<CR>
+nnoremap <silent><Leader>g :GFiles?<CR>
+
