@@ -1,5 +1,5 @@
 nnoremap <silent><C-p> :call FZF_dev()<CR>
-nnoremap <silent><Leader>b :Buffers<CR>
+nnoremap <silent><C-b> :Buffers<CR>
 nnoremap <silent><Leader>t :BTags<CR>
 nnoremap <silent><Leader>m :History<CR>
 nnoremap <silent><Leader>g :GFiles?<CR>
