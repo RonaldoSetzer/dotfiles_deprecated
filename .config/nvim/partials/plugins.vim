@@ -26,6 +26,7 @@ call plug#begin()
   Plug 'sheerun/vim-polyglot'
   Plug 'w0rp/ale'
   Plug 'mattn/emmet-vim'
+  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
   " GIT =============================================
   Plug 'airblade/vim-gitgutter'
