@@ -8,7 +8,7 @@ nnoremap <Leader>v <C-w>v
 
 " Map save to Ctrl + S
 map <c-s> :w<CR>
-imap <c-s> <C-o>:w<CR>
+imap <c-s> <C-o>:w<return><esc>
 nnoremap <Leader>s :w<CR>
 
 " Map close buffer
