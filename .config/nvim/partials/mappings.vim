@@ -48,3 +48,5 @@ nnoremap <silent><Leader>t :BTags<CR>
 nnoremap <silent><Leader>m :History<CR>
 nnoremap <silent><Leader>g :GFiles?<CR>
 
+" Breakline to indent position
+inoremap <C-c> <CR><Esc>O
