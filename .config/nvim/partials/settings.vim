@@ -12,7 +12,7 @@ set smartcase                                                                   
 set ignorecase                                                                 "case insensitive search
 set showmatch                                                                   "Highlight matching bracket
 
-set mouse=a                                                                     "Enable mouse usage
+" set mouse=a                                                                     "Enable mouse usage
 
 set clipboard=unnamed
 
