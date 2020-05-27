@@ -3,7 +3,7 @@ inoremap jj <Esc>
 tnoremap <Leader>jj <C-\><C-n>
 
 " Map for LeaderKey key
-let mapleader = ','
+let mapleader = ' '
 nnoremap <Leader>v <C-w>v
 
 " Map save to Ctrl + S
