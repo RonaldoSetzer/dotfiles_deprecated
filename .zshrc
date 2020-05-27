@@ -12,6 +12,9 @@ export EDITOR="nvim"
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*" --glob "!node_modules/*"'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+# BAT
+export BAT_THEME="ansi-dark"
+
 # ALIAS
 alias zs="source ~/.zshrc"
 alias config="/usr/bin/git --git-dir=$HOME/.files/ --work-tree=$HOME"
