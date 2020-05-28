@@ -28,6 +28,9 @@ nmap <Leader>F <Plug>CtrlSFCwordPath
 " comment command
 nmap <Leader>c gcc
 
+" Yank to the end of the line
+nnoremap Y y$
+
 " Open horizontal split
 nnoremap <Leader>h <C-w>s
 
