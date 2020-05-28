@@ -1,3 +1,4 @@
+
 set showtabline=2
 
 augroup VimrcLightline
@@ -9,20 +10,22 @@ augroup VimrcLightline
 augroup end
 
 let g:lightline = {}
+let g:lightline.component_raw = {'buffers': 1}
 let g:lightline.colorscheme = get(g:, 'colors_name', 'default')
 let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" }
 let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" }
 let g:lightline.tabline = {'left': [['buffers']], 'right': [['git_status']]}
+
 let g:lightline.active = {
 \ 'left': [[ 'mode', 'paste'], [ 'readonly', 'relativepath', 'custom_modified' ]],
-\ 'right': [['linter_errors', 'linter_warnings'], ['indent', 'percent', 'lineinfo'], ['filetype']],
+\ 'right': [['linter_errors', 'linter_warnings'], ['filetype']],
 \ }
-  let g:lightline.mode_map = {
-  \ 'n': '★',  'i': '✎',       'R': '✎',     'v': '☆',
-  \ 'V': '☆',  "\<C-v>": '☆',  'c': '☆',     's': 'S',
-  \ 'S': 'S',  "\<C-s>": 'S',  't': 'T',
-  \}
 
+let g:lightline.mode_map = {
+\ 'n': '★',  'i': '✎',       'R': '✎',     'v': '☆',
+\ 'V': '☆',  "\<C-v>": '☆',  'c': '☆',     's': 'S',
+\ 'S': 'S',  "\<C-s>": 'S',  't': 'T',
+\}
 
 let g:lightline.component_expand = {
 \ 'buffers': 'lightline#bufferline#buffers',
