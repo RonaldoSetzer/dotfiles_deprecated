@@ -27,6 +27,10 @@ let g:lightline.mode_map = {
 \ 'S': 'S',  "\<C-s>": 'S',  't': 'T',
 \}
 
+let g:lightline#bufferline#number_map = {
+\ 0: '0:', 1: '1:', 2: '2:', 3: '3:', 4: '4:',
+\ 5: '5:', 6: '6:', 7: '7:', 8: '8:', 9: '9:'}
+
 let g:lightline.component_expand = {
 \ 'buffers': 'lightline#bufferline#buffers',
 \ 'indent': 'IndentInfo',
@@ -43,11 +47,12 @@ let g:lightline.component_type   = {
 \ 'linter_warnings': 'warning'
 \}
 
-let g:lightline#bufferline#show_number  = 0
+let g:lightline#bufferline#show_number  = 2
 let g:lightline#bufferline#shorten_path = 0
 let g:lightline#bufferline#filename_modifier = ':t'
 let g:lightline#bufferline#unnamed      = '[No Name]'
 let g:lightline#bufferline#enable_devicons = 1
+let g:lightline#bufferline#clickable = 1
 
 nmap <Leader>1 <Plug>lightline#bufferline#go(1)
 nmap <Leader>2 <Plug>lightline#bufferline#go(2)
