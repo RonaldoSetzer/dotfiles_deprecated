@@ -78,3 +78,5 @@ let g:palenight_terminal_italics=1
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 
+" Coc-Explorer
+" autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
