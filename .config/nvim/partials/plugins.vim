@@ -5,8 +5,6 @@ call plug#begin()
   Plug 'itchyny/lightline.vim'
   Plug 'mengelbrecht/lightline-bufferline'
   Plug 'Yggdroot/indentLine'
-  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-  Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " IDE =============================================
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -19,7 +17,6 @@ call plug#begin()
   Plug 'tomtom/tcomment_vim'
   Plug 'prettier/vim-prettier'
   Plug 'matze/vim-move'
-  Plug 'scrooloose/nerdtree'
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
@@ -75,13 +72,6 @@ let g:user_emmet_settings = {
 
 " Vim-move
 let g:move_key_modifier = 'C'
-
-" NerdTree
-let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
-let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
-
-let g:NERDTreeDirArrowExpandable = '❯'
-let g:NERDTreeDirArrowCollapsible = '▾'
 
 " Palenight
 let g:palenight_terminal_italics=1

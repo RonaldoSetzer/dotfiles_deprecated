@@ -23,7 +23,7 @@ nnoremap <Leader>E :lclose<CR>
 " Search mappings
 nmap <Leader>f <Plug>CtrlSFPrompt
 vmap <Leader>F <Plug>CtrlSFVwordPath
-nmap <Leader>F <Plug>CtrlSFCwordPath
+nmap <Leader>s :Rg<CR>
 
 " comment command
 nmap <Leader>c gcc
@@ -40,9 +40,6 @@ nnoremap <Leader>v <C-w>v
 " Resize window with shift + and shift -
 nnoremap _ <c-w>5<
 nnoremap + <c-w>5>
-
-" Toggle NerdTree
-map <C-n> :NERDTreeToggle<CR>
 
 " FZF 
 nnoremap <silent><C-p> :call FZF_dev()<CR>
