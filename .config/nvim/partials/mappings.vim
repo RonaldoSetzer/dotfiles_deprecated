@@ -71,6 +71,7 @@ nmap <leader>gy <Plug>(coc-type-definition)
 nmap <leader>gi <Plug>(coc-implementation)
 nmap <leader>gr <Plug>(coc-references)
 nmap <leader>rr <Plug>(coc-rename)
+nmap <silent><leader>rs :CocRestart<CR>
 
 " Open Coc-Explorer
 nmap <C-n> :CocCommand explorer<CR>
