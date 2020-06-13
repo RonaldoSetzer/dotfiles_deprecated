@@ -1,7 +1,3 @@
-" Map for Escape key
-inoremap jj <Esc>
-tnoremap <Leader>jj <C-\><C-n>
-
 " Map for LeaderKey key
 let mapleader = ' '
 nnoremap <Leader>v <C-w>v
@@ -75,3 +71,6 @@ nmap <silent><leader>rs :CocRestart<CR>
 
 " Open Coc-Explorer
 nmap <C-n> :CocCommand explorer<CR>
+
+" Call commando to write a terminal command
+nnoremap <silent><Leader>t :!
