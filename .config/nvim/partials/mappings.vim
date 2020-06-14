@@ -27,12 +27,6 @@ nmap <Leader>c gcc
 " Yank to the end of the line
 nnoremap Y y$
 
-" Open horizontal split
-nnoremap <Leader>h <C-w>s
-
-" Open vertical split
-nnoremap <Leader>v <C-w>v
-
 " Resize window with shift + and shift -
 nnoremap _ <c-w>5<
 nnoremap + <c-w>5>
