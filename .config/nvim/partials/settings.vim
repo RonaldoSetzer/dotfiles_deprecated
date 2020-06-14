@@ -34,6 +34,7 @@ set nofoldenable                                                                
 set colorcolumn=100                                                             "Highlight 100th column for easier wrapping
 set foldmethod=syntax                                                           "When folding enabled, use syntax method
 set diffopt+=vertical       
+set splitbelow splitright
  
 syntax on
 colorscheme palenight
