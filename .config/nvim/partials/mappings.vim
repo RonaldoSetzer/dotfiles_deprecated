@@ -31,6 +31,10 @@ nnoremap Y y$
 nnoremap _ <c-w>5<
 nnoremap + <c-w>5>
 
+" Switch split vert to horiz or horiz to ver
+map <leader>th <C-w>t<C-w>H
+map <leader>tk <C-w>t<C-w>K
+
 " FZF 
 nnoremap <silent><C-p> :call FZF_dev()<CR>
 nnoremap <silent><C-b> :Buffers<CR>
