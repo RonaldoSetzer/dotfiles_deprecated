@@ -1,6 +1,3 @@
-
-set showtabline=2
-
 augroup VimrcLightline
   autocmd!
   autocmd User ALEFixPre   call lightline#update()
@@ -10,11 +7,9 @@ augroup VimrcLightline
 augroup end
 
 let g:lightline = {}
-let g:lightline.component_raw = {'buffers': 1}
 let g:lightline.colorscheme = get(g:, 'colors_name', 'default')
 let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" }
 let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" }
-let g:lightline.tabline = {'left': [['buffers']], 'right': [['git_status']]}
 
 let g:lightline.active = {
 \ 'left': [[ 'mode', 'paste'], [ 'readonly', 'relativepath', 'custom_modified' ]],
@@ -27,13 +22,7 @@ let g:lightline.mode_map = {
 \ 'S': 'S',  "\<C-s>": 'S',  't': 'T',
 \}
 
-let g:lightline#bufferline#number_map = {
-\ 0: '0:', 1: '1:', 2: '2:', 3: '3:', 4: '4:',
-\ 5: '5:', 6: '6:', 7: '7:', 8: '8:', 9: '9:'}
-
 let g:lightline.component_expand = {
-\ 'buffers': 'lightline#bufferline#buffers',
-\ 'indent': 'IndentInfo',
 \ 'custom_modified': 'StatuslineModified',
 \ 'linter_warnings': 'LightlineLinterWarnings',
 \ 'linter_errors': 'LightlineLinterErrors',
@@ -41,34 +30,10 @@ let g:lightline.component_expand = {
 \}
 
 let g:lightline.component_type   = {
-\ 'buffers': 'tabsel',
 \ 'custom_modified': 'error',
 \ 'linter_errors': 'error',
 \ 'linter_warnings': 'warning'
 \}
-
-let g:lightline#bufferline#show_number  = 2
-let g:lightline#bufferline#shorten_path = 0
-let g:lightline#bufferline#filename_modifier = ':t'
-let g:lightline#bufferline#unnamed      = '[No Name]'
-let g:lightline#bufferline#enable_devicons = 1
-let g:lightline#bufferline#clickable = 1
-
-nmap <Leader>1 <Plug>lightline#bufferline#go(1)
-nmap <Leader>2 <Plug>lightline#bufferline#go(2)
-nmap <Leader>3 <Plug>lightline#bufferline#go(3)
-nmap <Leader>4 <Plug>lightline#bufferline#go(4)
-nmap <Leader>5 <Plug>lightline#bufferline#go(5)
-nmap <Leader>6 <Plug>lightline#bufferline#go(6)
-nmap <Leader>7 <Plug>lightline#bufferline#go(7)
-nmap <Leader>8 <Plug>lightline#bufferline#go(8)
-nmap <Leader>9 <Plug>lightline#bufferline#go(9)
-nmap <Leader>0 <Plug>lightline#bufferline#go(10)
-
-function! IndentInfo() abort
-  let l:indent_type = &expandtab ? 'spaces' : 'tabs'
-  return l:indent_type.': '.&shiftwidth
-endfunction
 
 function! StatuslineModified() abort
   return &modified ? '+' : &modifiable ? '' : '-'

@@ -4,7 +4,6 @@ call plug#begin()
   Plug 'morhetz/gruvbox'
   Plug 'ryanoasis/vim-devicons', {'commit': '58e57b6'}
   Plug 'itchyny/lightline.vim'
-  Plug 'mengelbrecht/lightline-bufferline'
   Plug 'Yggdroot/indentLine'
 
   " IDE =============================================
@@ -18,6 +17,7 @@ call plug#begin()
   Plug 'tomtom/tcomment_vim'
   Plug 'prettier/vim-prettier'
   Plug 'matze/vim-move'
+  Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
