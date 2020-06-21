@@ -2,6 +2,9 @@
 let mapleader = ' '
 nnoremap <Leader>v <C-w>v
 
+" Map jk for exit to normal mode
+inoremap jk <esc>
+
 " Map save to Ctrl + S
 map <c-s> :w<CR>
 imap <c-s> <C-o>:w<return><esc>
