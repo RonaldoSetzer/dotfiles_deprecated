@@ -26,7 +26,6 @@ let g:lightline.component_expand = {
 \ 'custom_modified': 'StatuslineModified',
 \ 'linter_warnings': 'LightlineLinterWarnings',
 \ 'linter_errors': 'LightlineLinterErrors',
-\ 'git_status': 'GitStatusline',
 \}
 
 let g:lightline.component_type   = {
@@ -55,17 +54,5 @@ function AleStatus(type) abort
     return printf('%d %s', l:items, toupper(strpart(a:type, 0, 1)))
   endif
   return ''
-endfunction
-
-function! GitStatusline() abort
-  let l:head = fugitive#head()
-  if !exists('b:gitgutter')
-    return (empty(l:head) ? '' : printf(' %s', l:head))
-  endif
-
-  let l:summary = GitGutterGetHunkSummary()
-  let l:result = filter([l:head] + map(['+','~','-'], {i,v -> v.l:summary[i]}), 'v:val[-1:] !=? "0"')
-
-  return (empty(l:result) ? '' : printf(' %s', join(l:result, ' ')))
 endfunction
 
