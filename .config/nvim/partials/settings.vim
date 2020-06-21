@@ -18,6 +18,7 @@ set clipboard=unnamed
 set wrap                                                                        "Enable word wrap
 set linebreak                                                                   "Wrap lines at convenient points
 set listchars=tab:>\ ,trail:·                                                   "Set trails for tabs and spaces
+set showtabline=0
 
 set noswapfile                                                                  "Disable creating swap file
 set nobackup                                                                    "Disable saving backup file
