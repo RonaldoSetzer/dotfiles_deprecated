@@ -1,5 +1,4 @@
 set termguicolors
-set background=dark
 set encoding=UTF-8
 set hidden                                                                      "Allow to switch between buffers without saving
 
@@ -12,7 +11,7 @@ set smartcase                                                                   
 set ignorecase                                                                 "case insensitive search
 set showmatch                                                                   "Highlight matching bracket
 
-" set mouse=a                                                                     "Enable mouse usage
+set mouse=a                                                                     "Enable mouse usage
 
 set clipboard=unnamed
 
@@ -36,7 +35,6 @@ set foldmethod=syntax                                                           
 set diffopt+=vertical       
 set splitbelow splitright
  
-syntax on
 colorscheme palenight
 
 if exists('+termguicolors')
