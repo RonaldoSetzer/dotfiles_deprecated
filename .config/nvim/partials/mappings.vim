@@ -38,6 +38,10 @@ nnoremap + <c-w>5>
 map <leader>th <C-w>t<C-w>H
 map <leader>tk <C-w>t<C-w>K
 
+" Maximize and Minimize current tab
+nnoremap <silent><leader>z :tabedit %<CR>
+nnoremap <silent><leader>Z :tabclose<CR>
+
 " FZF 
 nnoremap <silent><C-p> :call FZF_dev()<CR>
 nnoremap <silent><C-b> :Buffers<CR>
