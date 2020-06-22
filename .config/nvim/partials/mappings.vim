@@ -15,10 +15,6 @@ nnoremap <Leader>w :bd<CR>
 " Clear highlight on pressing ESC
 nnoremap <esc> :noh<return><esc>
 
-" Handle ale error window
-nnoremap <Leader>e :lopen<CR>
-nnoremap <Leader>E :lclose<CR>
-
 " Search mappings
 nmap <Leader>f <Plug>CtrlSFPrompt
 vmap <Leader>F <Plug>CtrlSFVwordPath
