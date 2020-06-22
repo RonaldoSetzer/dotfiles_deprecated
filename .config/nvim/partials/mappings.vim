@@ -74,8 +74,5 @@ nmap <leader>gr <Plug>(coc-references)
 nmap <leader>rr <Plug>(coc-rename)
 nmap <silent><leader>rs :CocRestart<CR>
 
-" Open Coc-Explorer
-nmap <C-n> :CocCommand explorer<CR>
-
 " Call commando to write a terminal command
 nnoremap <silent><Leader>t :!
