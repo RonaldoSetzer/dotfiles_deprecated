@@ -17,7 +17,9 @@ nnoremap <esc> :noh<return><esc>
 
 " Search mappings
 nmap <Leader>f <Plug>CtrlSFPrompt
-vmap <Leader>F <Plug>CtrlSFVwordPath
+vmap <Leader>f <Plug>CtrlSFVwordPath
+vmap <Leader>F <Plug>CtrlSFVwordExec
+nmap <Leader>F <Plug>CtrlSFCwordPath
 nmap <Leader>s :Rg<CR>
 
 " comment command

@@ -61,10 +61,14 @@ let g:gitgutter_sign_removed = '▌'
 let g:gitgutter_sign_removed_first_line = '▌'
 let g:gitgutter_sign_modified_removed = '▌'
 
-let g:ctrlsf_position = 'bottom'
-let g:ctrlsf_default_view_mode = 'compact'
+" CtrlSF
+let g:ctrlsf_auto_preview = 1
 let g:ctrlsf_auto_focus = {"at": "start" }
-let g:ctrlsf_auto_close = { "compact": 1 }
+let g:ctrlsf_context = '-A 2 -B 0'
+let g:ctrlsf_mapping = {
+\ "next": "n",
+\ "prev": "N",
+\ }
 
 " Emmet config
 let g:user_emmet_settings = {
