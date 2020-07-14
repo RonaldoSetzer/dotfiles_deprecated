@@ -29,6 +29,9 @@ call plug#begin()
   Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
 
+  " OTHERS =============================================
+  Plug 'vimwiki/vimwiki'
+
   " =================================================
 call plug#end()
 
@@ -74,6 +77,9 @@ let g:ctrlsf_mapping = {
 let g:user_emmet_settings = {
 \ 'javascript.jsx': { 'extends': 'jsx' }
 \ }
+
+" VimWiki
+let g:vimwiki_list = [{'path':'~/Documents/vimwiki/', 'syntax': 'markdown', 'ext':'.md'}]
 
 " Vim-move
 let g:move_key_modifier = 'C'
