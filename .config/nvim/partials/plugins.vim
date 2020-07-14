@@ -84,6 +84,10 @@ let g:vimwiki_list = [{'path':'~/Documents/vimwiki/', 'syntax': 'markdown', 'ext
 " Vim-move
 let g:move_key_modifier = 'C'
 
+" Vim-markdown
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 
