@@ -1,7 +1,6 @@
 call plug#begin()
   " APPARENCE =======================================
-  Plug 'RonaldoSetzer/palenight.vim'
-  Plug 'morhetz/gruvbox'
+  Plug 'dragon-themes/kaiser.vim'
   Plug 'ryanoasis/vim-devicons', {'commit': '58e57b6'}
   Plug 'itchyny/lightline.vim'
   Plug 'Yggdroot/indentLine'
@@ -78,8 +77,6 @@ let g:user_emmet_settings = {
 " Vim-move
 let g:move_key_modifier = 'C'
 
-" Palenight
-let g:palenight_terminal_italics=1
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 

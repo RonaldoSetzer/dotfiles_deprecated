@@ -35,8 +35,7 @@ set colorcolumn=100                                                             
 set foldmethod=syntax                                                           "When folding enabled, use syntax method
 set diffopt+=vertical       
  
-" colorscheme palenight
-colorscheme gruvbox
+colorscheme kaiser
 
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
