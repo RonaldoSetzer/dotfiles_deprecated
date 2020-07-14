@@ -17,6 +17,7 @@ call plug#begin()
   Plug 'prettier/vim-prettier'
   Plug 'matze/vim-move'
   Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+  Plug 'tpope/vim-eunuch'
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
