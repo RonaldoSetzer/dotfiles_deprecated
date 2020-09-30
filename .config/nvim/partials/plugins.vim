@@ -77,6 +77,7 @@ let g:ctrlsf_mapping = {
 let g:user_emmet_settings = {
 \ 'javascript.jsx': { 'extends': 'jsx' }
 \ }
+let g:user_emmet_leader_key=','
 
 " VimWiki
 let g:vimwiki_list = [{'path':'~/Documents/vimwiki/', 'syntax': 'markdown', 'ext':'.md'}]
