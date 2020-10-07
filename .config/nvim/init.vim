@@ -1,4 +1,4 @@
-runtime! partials/plugins.vim
+runtime! partials/plugins-coc.vim
 runtime! partials/settings.vim
 runtime! partials/autocomplete.vim
 runtime! partials/mappings.vim

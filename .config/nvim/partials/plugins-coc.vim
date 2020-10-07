@@ -1,6 +1,9 @@
 call plug#begin()
   " APPARENCE =======================================
   Plug 'dragon-themes/kaiser.vim'
+  Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'RonaldoSetzer/gruvbox'
+  Plug 'RonaldoSetzer/palenight.vim'
   Plug 'ryanoasis/vim-devicons', {'commit': '58e57b6'}
   Plug 'itchyny/lightline.vim'
   Plug 'Yggdroot/indentLine'
@@ -18,12 +21,16 @@ call plug#begin()
   Plug 'matze/vim-move'
   Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
   Plug 'tpope/vim-eunuch'
+  Plug 'editorconfig/editorconfig-vim'
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
   Plug 'w0rp/ale'
   Plug 'mattn/emmet-vim'
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+  Plug 'tpope/vim-fireplace'
+  Plug 'guns/vim-clojure-static'
+  Plug 'kien/rainbow_parentheses.vim'
 
   " GIT =============================================
   Plug 'airblade/vim-gitgutter'
@@ -38,8 +45,12 @@ call plug#end()
 " ===================================================
 "  PLUGINS SETTINGS =================================
 " ===================================================
+colorscheme kaiser
 
 let g:indentLine_char = '⎸'
+
+" Editor Config
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
  " Error and warning signs.
 
@@ -77,7 +88,7 @@ let g:ctrlsf_mapping = {
 let g:user_emmet_settings = {
 \ 'javascript.jsx': { 'extends': 'jsx' }
 \ }
-let g:user_emmet_leader_key=','
+let g:user_emmet_leader_key='\'
 
 " VimWiki
 let g:vimwiki_list = [{'path':'~/Documents/vimwiki/', 'syntax': 'markdown', 'ext':'.md'}]
@@ -89,6 +100,4 @@ let g:move_key_modifier = 'C'
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
 
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
 
