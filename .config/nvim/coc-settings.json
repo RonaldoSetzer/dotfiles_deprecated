@@ -1,4 +1,5 @@
 {
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
   "suggest.noselect": false,
   "suggest.completionItemKindLabels": {
     "keyword": "\uf1de",

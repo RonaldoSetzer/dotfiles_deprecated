@@ -22,6 +22,7 @@ call plug#begin()
   Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
   Plug 'tpope/vim-eunuch'
   Plug 'editorconfig/editorconfig-vim'
+  Plug 'honza/vim-snippets'
 
   " DEVELOPMENT =====================================
   Plug 'sheerun/vim-polyglot'
