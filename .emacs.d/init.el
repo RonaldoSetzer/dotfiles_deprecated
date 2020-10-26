@@ -16,6 +16,8 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
 (org-babel-do-load-languages
   'org-babel-load-languages
   '((emacs-lisp . t)
