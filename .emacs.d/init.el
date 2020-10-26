@@ -18,6 +18,9 @@
 
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
+(use-package doom-themes
+  :init (load-theme 'doom-palenight t))
+
 (org-babel-do-load-languages
   'org-babel-load-languages
   '((emacs-lisp . t)
