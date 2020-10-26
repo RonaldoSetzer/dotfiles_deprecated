@@ -44,6 +44,8 @@
 (use-package doom-themes
   :init (load-theme 'doom-palenight t))
 
+(set-face-attribute 'default nil :font "Operator Mono Lig" :height 160)
+
 (org-babel-do-load-languages
   'org-babel-load-languages
   '((emacs-lisp . t)

@@ -71,6 +71,12 @@
    
 #+end_src
 
+** Font
+
+#+begin_src emacs-lisp
+(set-face-attribute 'default nil :font "Operator Mono Lig" :height 160)
+
+#+end_src
 
 * Org Mode
 
