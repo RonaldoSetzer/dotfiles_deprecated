@@ -95,6 +95,21 @@
   :config
   (counsel-mode 1))
 
+(use-package projectile
+  :diminish projectile-mode
+  :config (projectile-mode)
+  :custom ((projectile-completion-system 'ivy))
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
+  :init
+  ;; NOTE: Set this to the folder where you keep your Git repos!
+  (when (file-directory-p "~/Workspace/github")
+    (setq projectile-project-search-path '("~/Workspace/github")))
+  (setq projectile-switch-project-action #'projectile-dired))
+
+(use-package counsel-projectile
+  :config (counsel-projectile-mode))
+
 (org-babel-do-load-languages
   'org-babel-load-languages
   '((emacs-lisp . t)
