@@ -188,6 +188,17 @@
 
 #+end_src
 
+** Source Control
+#+begin_src emacs-lisp
+(use-package magit
+  :custom
+  (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
+
+(use-package evil-magit
+  :after magit)
+
+#+end_src
+
 ** JavaScript / TypeScript
 #+begin_src emacs-lisp
 (use-package js2-mode
