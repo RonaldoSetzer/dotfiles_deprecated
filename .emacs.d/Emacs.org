@@ -187,6 +187,23 @@
   :config (counsel-projectile-mode))
 
 #+end_src
+
+** JavaScript / TypeScript
+#+begin_src emacs-lisp
+(use-package js2-mode
+  :mode "\\.jsx?\\'"
+  :hook (js2-mode . lsp-deferred)
+  :config
+  (setq js-indent-level 2))
+
+(use-package typescript-mode
+  :mode "\\.ts\\'"
+  :hook (typescript-mode . lsp-deferred)
+  :config
+  (setq typescript-indent-level 2))
+
+#+end_src
+
 * Org Mode
 
 ** Org Configuration

@@ -134,6 +134,18 @@
 (use-package counsel-projectile
   :config (counsel-projectile-mode))
 
+(use-package js2-mode
+  :mode "\\.jsx?\\'"
+  :hook (js2-mode . lsp-deferred)
+  :config
+  (setq js-indent-level 2))
+
+(use-package typescript-mode
+  :mode "\\.ts\\'"
+  :hook (typescript-mode . lsp-deferred)
+  :config
+  (setq typescript-indent-level 2))
+
 (org-babel-do-load-languages
   'org-babel-load-languages
   '((emacs-lisp . t)
