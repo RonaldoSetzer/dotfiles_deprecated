@@ -92,8 +92,15 @@
 
 #+begin_src emacs-lisp
 (use-package doom-themes
-  :init (load-theme 'doom-palenight t))
+  :init (load-theme 'kaiser t))
    
+#+end_src
+
+** Autothemer
+#+begin_src emacs-lisp
+(use-package autothemer
+  :ensure t)
+
 #+end_src
 
 ** Font
