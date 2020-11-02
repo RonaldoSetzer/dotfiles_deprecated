@@ -22,6 +22,21 @@
   :config
   (setq which-key-idle-delay 0.3))
 
+(use-package general
+  :config
+  (general-create-definer rs/leader-keys
+    :keymaps '(normal insert visual emacs)
+    :prefix "SPC"
+    :global-prefix "C-SPC")
+
+  (rs/leader-keys
+    "b"  '(switch-to-buffer :which-key "switch buffer")
+    "p"  '(projectile-switch-project :which-key "switch project")
+    "d"  '(describe-face :which-key "describe face")
+    "e"  '(eval-buffer :which-key "eval buffer")
+    "t"  '(:ignore t :which-key "toggles")
+    "tt" '(counsel-load-theme :which-key "choose theme")))
+
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
 (use-package evil
