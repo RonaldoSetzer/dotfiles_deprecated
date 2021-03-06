@@ -12,6 +12,7 @@ set ignorecase                                                                 "
 set showmatch                                                                   "Highlight matching bracket
 
 set mouse=a                                                                     "Enable mouse usage
+set scrolloff=3
 
 set clipboard=unnamed
 
@@ -35,6 +36,7 @@ set colorcolumn=100                                                             
 set foldmethod=syntax                                                           "When folding enabled, use syntax method
 set diffopt+=vertical       
  
+highlight Normal guibg=none;
 
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"

@@ -15,16 +15,6 @@ nnoremap <Leader>w :bd<CR>
 " Clear highlight on pressing ESC
 nnoremap <esc> :noh<return><esc>
 
-" Search mappings
-nmap <Leader>f <Plug>CtrlSFPrompt
-vmap <Leader>f <Plug>CtrlSFVwordPath
-vmap <Leader>F <Plug>CtrlSFVwordExec
-nmap <Leader>F <Plug>CtrlSFCwordPath
-nmap <Leader>s :Rg<CR>
-
-" comment command
-nmap <Leader>c gcc
-
 " Yank to the end of the line
 nnoremap Y y$
 
@@ -39,14 +29,6 @@ map <leader>tk <C-w>t<C-w>K
 " Maximize and Minimize current tab
 nnoremap <silent><leader>z :tabedit %<CR>
 nnoremap <silent><leader>Z :tabclose<CR>
-
-" FZF 
-nnoremap <silent><C-p> :call FZF_dev()<CR>
-nnoremap <silent><Leader>b :Buffers<CR>
-" nnoremap <silent><Leader>t :BTags<CR>
-nnoremap <silent><Leader>m :History<CR>
-nnoremap <silent><Leader>G :GFiles?<CR>
-nnoremap <silent><Leader>g :tab G<CR>
 
 " Breakline to indent position
 inoremap <C-c> <CR><Esc>O
@@ -63,13 +45,3 @@ vnoremap <Left> <Nop>
 vnoremap <Right> <Nop>
 vnoremap <Up> <Nop>
 
-" GoTo code navigation.
-nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gy <Plug>(coc-type-definition)
-nmap <leader>gi <Plug>(coc-implementation)
-nmap <leader>gr <Plug>(coc-references)
-nmap <leader>rr <Plug>(coc-rename)
-nmap <silent><leader>rs :CocRestart<CR>
-
-" Call commando to write a terminal command
-nnoremap <silent><Leader>t :!
