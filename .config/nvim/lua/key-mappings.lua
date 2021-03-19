@@ -19,3 +19,14 @@ vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { silent = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { silent = true })
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { silent = true })
+
+-- Remove newbie crutches in Normal and Visual Mode
+vim.api.nvim_set_keymap('n', '<Down>', '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Left>', '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Right>', '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Up>', '<NOP>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('v', '<Down>', '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Left>', '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Right>', '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Up>', '<NOP>', { noremap = true, silent = true })
