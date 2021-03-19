@@ -13,3 +13,9 @@ vim.api.nvim_set_keymap('i', '<C-s>', '<C-o>:w<CR><Esc>', { silent = true })
 
 -- Map close buffer
 vim.api.nvim_set_keymap('n', '<Leader>w', ':bd<CR>', { noremap = true, silent = true })
+
+-- Navigation
+vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { silent = true })
+vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { silent = true })
+vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { silent = true })
+vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { silent = true })
