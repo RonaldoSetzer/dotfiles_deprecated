@@ -34,3 +34,7 @@ vim.api.nvim_set_keymap('v', '<Up>', '<NOP>', { noremap = true, silent = true })
 -- Swtich buffers with Tab
 vim.api.nvim_set_keymap('n', '<TAB>', ':bnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-TAB>', ':bprevious<CR>', { noremap = true, silent = true })
+
+-- Improve indenting (visual)
+vim.api.nvim_set_keymap('v', '<', '<gv', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '>', '>gv', { noremap = true, silent = true })
