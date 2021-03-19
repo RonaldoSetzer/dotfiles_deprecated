@@ -9,6 +9,9 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 return require('packer').startup(function()
-  -- Packer can manage itself as an optional plugin
   use {'wbthomason/packer.nvim', opt = true}
+
+  -- IDE -------------------------------------
+  use 'kyazdani42/nvim-tree.lua'
+  use 'kyazdani42/nvim-web-devicons'
 end) 
