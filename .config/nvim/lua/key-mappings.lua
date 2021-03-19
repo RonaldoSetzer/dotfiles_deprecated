@@ -30,3 +30,7 @@ vim.api.nvim_set_keymap('v', '<Down>', '<NOP>', { noremap = true, silent = true 
 vim.api.nvim_set_keymap('v', '<Left>', '<NOP>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<Right>', '<NOP>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<Up>', '<NOP>', { noremap = true, silent = true })
+
+-- Swtich buffers with Tab
+vim.api.nvim_set_keymap('n', '<TAB>', ':bnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-TAB>', ':bprevious<CR>', { noremap = true, silent = true })
