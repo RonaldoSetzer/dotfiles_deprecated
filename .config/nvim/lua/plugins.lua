@@ -8,10 +8,15 @@ if fn.empty(fn.glob(install_path)) > 0 then
   execute 'packadd packer.nvim'
 end
 
+
 return require('packer').startup(function()
   use {'wbthomason/packer.nvim', opt = true}
 
   -- IDE -------------------------------------
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
+
+  -- LSP -------------------------------------
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/nvim-compe'
 end) 
