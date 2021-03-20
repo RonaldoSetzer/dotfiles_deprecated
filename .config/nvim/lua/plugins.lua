@@ -15,6 +15,7 @@ return require('packer').startup(function()
   -- IDE -------------------------------------
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
+  use 'hrsh7th/vim-vsnip'
 
   -- LSP -------------------------------------
   use 'neovim/nvim-lspconfig'
