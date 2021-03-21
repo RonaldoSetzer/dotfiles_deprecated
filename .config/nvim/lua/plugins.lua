@@ -16,6 +16,8 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
   use 'hrsh7th/vim-vsnip'
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'dragon-themes/kaiser.vim'
 
   -- LSP -------------------------------------
   use 'neovim/nvim-lspconfig'
