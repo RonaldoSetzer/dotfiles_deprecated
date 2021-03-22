@@ -7,5 +7,6 @@ require('plugins-config/nvim-tree')
 require('plugins-config/nvim-compe')
 require('plugins-config/nvim-treesitter')
 require('plugins-config/telescope')
+require('plugins-config/telescope-customs')
 
 require('lsp/lua-language-server')
