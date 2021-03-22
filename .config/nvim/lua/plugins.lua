@@ -19,6 +19,11 @@ return require('packer').startup(function()
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'dragon-themes/kaiser.vim'
 
+  -- Telescope -------------------------------
+  use 'nvim-lua/popup.nvim'
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-telescope/telescope.nvim'
+
   -- LSP -------------------------------------
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'

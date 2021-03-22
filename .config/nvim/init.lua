@@ -6,5 +6,6 @@ require('color-settings')
 require('plugins-config/nvim-tree')
 require('plugins-config/nvim-compe')
 require('plugins-config/nvim-treesitter')
+require('plugins-config/telescope')
 
 require('lsp/lua-language-server')
