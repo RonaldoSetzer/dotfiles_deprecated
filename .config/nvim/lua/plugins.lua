@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use 'tpope/vim-surround' -- vimscript
+  use 'tpope/vim-repeat' -- vimscript, allow repeat surround with .
 
   -- Commands --------------------------------
   use 'tpope/vim-eunuch'
