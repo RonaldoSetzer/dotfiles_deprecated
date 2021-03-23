@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'dragon-themes/kaiser.vim'
   use 'kyazdani42/nvim-web-devicons'
+  use 'norcalli/nvim-colorizer.lua'
 
   -- IDE -------------------------------------
   use 'kyazdani42/nvim-tree.lua'

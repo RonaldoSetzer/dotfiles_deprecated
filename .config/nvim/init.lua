@@ -5,6 +5,7 @@ require('color-settings')
 
 require('plugins-config/lspkind')
 require('plugins-config/nvim-autopairs')
+require('plugins-config/nvim-colorizer')
 require('plugins-config/nvim-tree')
 require('plugins-config/nvim-compe')
 require('plugins-config/nvim-treesitter')
