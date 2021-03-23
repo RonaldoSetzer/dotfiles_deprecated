@@ -29,6 +29,7 @@ return require('packer').startup(function()
   -- LSP -------------------------------------
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
+  use 'onsails/lspkind-nvim'
 
   -- OTHERS ----------------------------------
   use 'vimwiki/vimwiki' -- vimscript
