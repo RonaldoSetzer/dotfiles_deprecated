@@ -23,6 +23,9 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-ts-autotag'
   use 'tpope/vim-surround' -- vimscript
 
+  -- Commands --------------------------------
+  use 'tpope/vim-eunuch'
+
   -- Telescope -------------------------------
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
