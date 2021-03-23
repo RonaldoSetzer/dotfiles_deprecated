@@ -20,7 +20,7 @@ return require('packer').startup(function()
   use 'dragon-themes/kaiser.vim'
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
-
+  use 'tpope/vim-surround' -- vimscript
   -- Telescope -------------------------------
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
