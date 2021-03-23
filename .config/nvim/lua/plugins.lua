@@ -8,29 +8,33 @@ if fn.empty(fn.glob(install_path)) > 0 then
   execute 'packadd packer.nvim'
 end
 
-
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   use {'wbthomason/packer.nvim', opt = true}
+
+  -- Apparence -------------------------------
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'dragon-themes/kaiser.vim'
+  use 'kyazdani42/nvim-web-devicons'
 
   -- IDE -------------------------------------
   use 'kyazdani42/nvim-tree.lua'
-  use 'kyazdani42/nvim-web-devicons'
-  use 'hrsh7th/vim-vsnip'
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use 'dragon-themes/kaiser.vim'
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use 'tpope/vim-surround' -- vimscript
+
   -- Telescope -------------------------------
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
+
+  -- Snippets --------------------------------
+  use 'hrsh7th/vim-vsnip'
 
   -- LSP -------------------------------------
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
   use 'onsails/lspkind-nvim'
 
-  -- OTHERS ----------------------------------
+  -- Others ----------------------------------
   use 'vimwiki/vimwiki' -- vimscript
-end) 
+end)
