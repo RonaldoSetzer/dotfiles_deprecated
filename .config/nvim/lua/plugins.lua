@@ -18,6 +18,8 @@ return require('packer').startup(function()
   use 'hrsh7th/vim-vsnip'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'dragon-themes/kaiser.vim'
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
 
   -- Telescope -------------------------------
   use 'nvim-lua/popup.nvim'
