@@ -1,3 +1,4 @@
+vim.cmd('set shortmess+=c')
 vim.o.termguicolors = true
 vim.o.encoding = 'UTF-8'
 vim.o.t_Co = "256"                      --Support 256 colors
@@ -31,7 +32,6 @@ vim.wo.breakindent = true               --"Preserve indent on line wrap
 vim.wo.signcolumn = 'yes'
 vim.wo.colorcolumn = '100'              --"Highlight 100th column for easier wrapping
 vim.wo.foldmethod = 'syntax'            --"When folding enabled, use syntax method
-
 -- vim.o.listchars = 'tab:>\ ,trail:¬∑' --"Set trails for tabs and spaces
 -- vim.o.nofoldenable = true --"Disable folding by default
 -- vim.bo.diffopt = 'vertical'
