@@ -29,4 +29,7 @@ return require('packer').startup(function()
   -- LSP -------------------------------------
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
+
+  -- OTHERS ----------------------------------
+  use 'vimwiki/vimwiki' -- vimscript
 end) 

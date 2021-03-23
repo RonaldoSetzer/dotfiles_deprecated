@@ -10,5 +10,6 @@ require('plugins-config/nvim-treesitter')
 require('plugins-config/nvim-ts-autotag')
 require('plugins-config/telescope')
 require('plugins-config/telescope-customs')
+require('plugins-config/vim-wiki')
 
 require('lsp/lua-language-server')
