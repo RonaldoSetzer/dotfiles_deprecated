@@ -13,6 +13,7 @@ return require('packer').startup(function(use)
 
   -- Apparence -------------------------------
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'nvim-treesitter/playground'
   use 'dragon-themes/kaiser.vim'
   use 'RonaldoSetzer/gruvbox'
   use 'RonaldoSetzer/palenight.vim'
