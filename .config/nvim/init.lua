@@ -15,4 +15,5 @@ require('plugins-config/telescope')
 require('plugins-config/telescope-customs')
 require('plugins-config/vim-wiki')
 
+require('lsp')
 require('lsp/lua-language-server')
