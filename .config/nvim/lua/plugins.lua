@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
+  use 'terrortylor/nvim-comment'
   use 'tpope/vim-surround' -- vimscript
   use 'tpope/vim-repeat' -- vimscript, allow repeat surround with .
 
@@ -44,6 +45,7 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
   use 'onsails/lspkind-nvim'
+  use 'kabouzeid/nvim-lspinstall'
 
   -- Others ----------------------------------
   use 'vimwiki/vimwiki' -- vimscript
