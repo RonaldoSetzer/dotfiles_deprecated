@@ -18,3 +18,4 @@ require('plugins-config/vim-wiki')
 
 require('lsp')
 require('lsp.lua-ls')
+require('lsp.typescript-ls')
