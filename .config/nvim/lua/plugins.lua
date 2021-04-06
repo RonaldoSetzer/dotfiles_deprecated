@@ -47,6 +47,9 @@ return require('packer').startup(function(use)
   use 'onsails/lspkind-nvim'
   use 'kabouzeid/nvim-lspinstall'
 
+  -- GIT -------------------------------------
+  use 'tpope/vim-fugitive' -- vimscript
+
   -- Others ----------------------------------
   use 'vimwiki/vimwiki' -- vimscript
 end)
