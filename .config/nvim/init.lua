@@ -2,6 +2,7 @@ require('plugins')
 require('key-mappings')
 require('settings')
 require('color-settings')
+require('globals')
 
 require('plugins-config/lspkind')
 require('plugins-config/nvim-autopairs')
