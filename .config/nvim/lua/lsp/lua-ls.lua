@@ -9,6 +9,7 @@ sumneko_binary = "/Users/" .. USER .. "/.local/share/vim-lsp-settings/servers/lu
 
 require'lspconfig'.sumneko_lua.setup {
     cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
+    on_attach = require'lsp'.default_on_attach,
     settings = {
         Lua = {
             runtime = {
