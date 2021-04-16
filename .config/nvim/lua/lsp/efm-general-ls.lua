@@ -23,7 +23,10 @@ local tsserver_settings = {prettier, eslint}
 
 require'lspconfig'.efm.setup {
   cmd = {DATA_PATH .. '/lspinstall/efm/efm-langserver'},
-  init_options = {documentFormatting = true, codeAction = false},
+  init_options = {
+    documentFormatting = true, -- enable vim.lsp.buf.formatting()
+    codeAction = false
+  },
   filetypes = {'lua', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact'},
   settings = {
     rootMarkers = {'.git/'},
