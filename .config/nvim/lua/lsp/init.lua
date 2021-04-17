@@ -7,6 +7,13 @@ vim.fn.sign_define('LspDiagnosticsSignHint',
 vim.fn.sign_define('LspDiagnosticsSignInformation',
                    {texthl = 'LspDiagnosticsSignInformation', text = '', numhl = 'LspDiagnosticsSignInformation'})
 
+local keymapOpt = {noremap = true, silent = true}
+vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', keymapOpt)
+vim.api.nvim_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', keymapOpt)
+vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', keymapOpt)
+vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', keymapOpt)
+vim.api.nvim_set_keymap('n', '<leader>p', '<cmd>lua vim.lsp.buf.formatting()<CR>', keymapOpt)
+
 local function addReferencesHighlight(client)
   if client.resolved_capabilities.document_highlight then
     vim.api.nvim_exec([[
