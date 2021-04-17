@@ -27,7 +27,10 @@ require'lspconfig'.efm.setup {
     documentFormatting = true, -- enable vim.lsp.buf.formatting()
     codeAction = false
   },
-  filetypes = {'lua', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact'},
+  filetypes = {
+    'lua', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'json', 'yaml', 'html', 'css', 'scss',
+    'xml', 'vue'
+  },
   settings = {
     rootMarkers = {'.git/'},
     languages = {
@@ -35,7 +38,14 @@ require'lspconfig'.efm.setup {
       javascript = tsserver_settings,
       javascriptreact = tsserver_settings,
       typescript = tsserver_settings,
-      typescriptreact = tsserver_settings
+      typescriptreact = tsserver_settings,
+      vue = tsserver_settings,
+      json = {prettier},
+      xml = {prettier},
+      yaml = {prettier},
+      html = {prettier},
+      css = {prettier},
+      scss = {prettier}
     }
   }
 }
