@@ -11,7 +11,9 @@ imap <c-s> <C-o>:w<return><esc>
 
 " Map close buffer
 nnoremap <Leader>w :bd<CR>
-
+nnoremap <silent><TAB> :bnext<CR>
+nnoremap <silent><S-TAB> :bnext<CR>
+"
 " Clear highlight on pressing ESC
 nnoremap <esc> :noh<return><esc>
 
