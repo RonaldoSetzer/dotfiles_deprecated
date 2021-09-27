@@ -8,7 +8,7 @@ runtime! plug-config/ale.vim
 runtime! plug-config/coc-extensions.vim
 runtime! plug-config/coc.vim
 runtime! plug-config/ctrlsf.vim
-" runtime! plug-config/editorconfig.vim
+runtime! plug-config/editorconfig.vim
 runtime! plug-config/emmet.vim
 runtime! plug-config/fzf.vim
 runtime! plug-config/guigutter.vim
