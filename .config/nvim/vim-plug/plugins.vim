@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf.vim'                                               " remove
   " REVIEW
   Plug 'dyng/ctrlsf.vim'                                                " review
-  " Plug 'prettier/vim-prettier'                                        " review
+  Plug 'prettier/vim-prettier'                                          " review
   Plug 'matze/vim-move'                                                 " review
   Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }  " configure
   " Plug 'editorconfig/editorconfig-vim'                                " mayber
@@ -42,7 +42,7 @@ call plug#begin('~/.vim/plugged')
   " REVIEW
   " Plug 'sheerun/vim-polyglot'
   Plug 'w0rp/ale'                                                       " review
-  " Plug 'mattn/emmet-vim'
+  Plug 'mattn/emmet-vim'
   " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
   " Plug 'tpope/vim-fireplace'
   " Plug 'guns/vim-clojure-static'

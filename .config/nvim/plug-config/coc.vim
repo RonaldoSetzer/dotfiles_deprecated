@@ -1,8 +1,8 @@
 let g:coc_user_config = {
-      \ 'diagnostic.enable': v:false,
+\ 'diagnostic.enable': v:false,
+\ 'prettier.printWidth': 100,
+\ 'prettier.singleQuote': v:true,
 \ }
-" \ 'prettier.printWidth': 100,
-" \ 'prettier.singleQuote': v:true,
 
 function! s:check_back_space() abort
   let col = col('.') - 1
