@@ -24,5 +24,6 @@ nmap <leader>gi <Plug>(coc-implementation)
 nmap <leader>gr <Plug>(coc-references)
 nmap <leader>rr <Plug>(coc-rename)
 nmap <silent><leader>rs :CocRestart<CR>
+nmap <silent><leader>e :CocCommand explorer<CR>
 
 
